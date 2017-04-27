@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container">
-<form action="" method="post" class="form-inline">
+<form action="" method="post" class="form-inline" style="margin:30px;">
 <div class="form-group">
  	<label class="control-label" for="server">Server </label>
     <select name="server" class="form-control">
@@ -31,7 +31,29 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">RAM Usage</h3>
+  		</div>
+  		<div class="panel-body">
+    		<div class="chart" data-netdata="system.ram" data-height="300"></div>
+  		</div>
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">System Uptime</h3>
+  		</div>
+  		<div class="panel-body">
+    		<div class="chart" data-netdata="system.uptime" data-height="300"></div>
+  		</div>
+	</div>
+</div>
+
+
+<div class="col-md-6">
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Load Average</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="system.load" data-height="300"></div>
@@ -42,7 +64,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Disk IO</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="system.io" data-height="300"></div>
@@ -53,7 +75,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">IPv4 Bandwidth</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="system.ipv4" data-height="300"></div>
@@ -64,7 +86,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">IPv6 Bandwidth</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="system.ipv6" data-height="300"></div>
@@ -75,10 +97,10 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Processes</h3>
   		</div>
   		<div class="panel-body">
-    		<div class="chart" data-netdata="system.process" data-height="300"></div>
+    		<div class="chart" data-netdata="system.processes" data-height="300"></div>
   		</div>
 	</div>
 </div>
@@ -86,7 +108,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Disk I/O Bandwidth</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="disk.vda" data-height="300"></div>
@@ -97,7 +119,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Disk Usage</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="disk_space._" data-height="300"></div>
@@ -108,7 +130,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">IPv4 TCP Connections</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="ipv4.tcpsock" data-height="300"></div>
@@ -119,7 +141,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">IPv4 TCP Packets</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="ipv4.tcppackets" data-height="300"></div>
@@ -130,7 +152,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Apps CPU Usage</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="apps.cpu" data-height="300"></div>
@@ -141,17 +163,17 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Apps Memory Usage</h3>
   		</div>
   		<div class="panel-body">
-    		<div class="chart" data-netdata="app.mem" data-height="300"></div>
+    		<div class="chart" data-netdata="apps.mem" data-height="300"></div>
   		</div>
 	</div>
 </div>
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Users CPU Usage</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="users.cpu" data-height="300"></div>
@@ -161,7 +183,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Users Memory Usage</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="users.mem" data-height="300"></div>
@@ -171,7 +193,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Apache Locan Request</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="apache_local.requests" data-height="300"></div>
@@ -181,7 +203,7 @@
 <div class="col-md-6">
 	<div class="panel panel-default">
   		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
+    		<h3 class="panel-title">Apache Web Log Response Status</h3>
   		</div>
   		<div class="panel-body">
     		<div class="chart" data-netdata="web_log_apache.response_status" data-height="300"></div>
@@ -190,35 +212,15 @@
 </div>
 
 
-<div class="col-md-6">
-	<div class="panel panel-default">
-  		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
-  		</div>
-  		<div class="panel-body">
-    		<div class="chart" data-netdata="apache_local.requests" data-height="300"></div>
-  		</div>
-	</div>
-</div>
-<div class="col-md-6">
-	<div class="panel panel-default">
-  		<div class="panel-heading">
-    		<h3 class="panel-title">Panel title</h3>
-  		</div>
-  		<div class="panel-body">
-    		<div class="chart" data-netdata="apache_local.requests" data-height="300"></div>
-  		</div>
-	</div>
+
+
 </div>
 
-
-<div class="col-md-6">
-	<div class="chart" data-netdata="system.ram" data-height="300"></div>	
-</div>
-
-
+<div class="row">
+<div class="col-md-12">
 <a href="/netdata/{{ server_name }}/">
 <button type="button" class="btn btn-success">View full Panel</button>
 </a>
+</div>
 
 </div>
