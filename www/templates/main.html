@@ -13,13 +13,18 @@
 </head>
 <body>
 <div class="container">
-<form action="" method="post">
-    <select name="server">
+<form action="" method="post" class="form-inline">
+<div class="form-group">
+ 	<label class="control-label" for="server">Server </label>
+    <select name="server" class="form-control">
       <option value="server1">Server 1</option>
       <option value="server2">Server 2</option>
       <option value="server3">Server 3</option>
     </select>
-<input type="submit">
+ </div>
+ <div class="form-group">
+	<input type="submit" class="form-control" value="Submit">
+</div>
 </form>
 <div class="row">
 
@@ -211,5 +216,9 @@
 	<div class="chart" data-netdata="system.ram" data-height="300"></div>	
 </div>
 
+
+<a href="/netdata/{{ server_name }}/">
+<button type="button" class="btn btn-success">View full Panel</button>
+</a>
 
 </div>
